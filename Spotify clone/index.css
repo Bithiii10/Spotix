@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+/* General styles */
+body {
+    background-color: antiquewhite;
+}
+
+/* Navbar styles */
+nav {
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+    padding: 0 12px;
+}
+nav ul li {
+    padding: 0 12px;
+}
+.brand img {
+    width: 44px;
+    padding: 0 8px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+/* Container styles */
+.container {
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('spotify-home.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Bottom section styles */
+.bottom {
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    bottom: 0;   
+    color: white;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons {
+    margin-top: 14px;
+}
+.icons i {
+    cursor: pointer;
+}
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+/* Song Item styles */
+.songItem {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    border-radius: 34px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.songItem img {
+    width: 43px;
+    height: 43px; /* Ensure images are square */
+    margin-right: 15px; /* Space between image and text */
+    border-radius: 50%; /* Round images */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+.songName {
+    flex-grow: 1; /* Make song name take up available space */
+}
+
+.timestamp {
+    margin-left: auto; /* Push timestamp to the right */
+    display: flex;
+    align-items: center;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songItemContainer {
+    margin-top: 74px;
+}
+
+/* Song Info styles */
+.songInfo {
+    position: absolute;
+    left: 0;
+    font-family: 'Varela Round', sans-serif;
+}
